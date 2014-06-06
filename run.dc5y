@@ -1,9 +1,5 @@
 FROM florentbenoit/docker-static-serve-grunt
 
-
-ADD $app$/bootstrap.css /tmp/tutorial/bootstrap.css
-ADD $app$/components.js /tmp/tutorial/components.js
-ADD $app$/app.js /tmp/tutorial/app.js
 ADD $app$/index.html /tmp/tutorial/index.html
 
 # Start
