@@ -3,5 +3,5 @@ FROM florentbenoit/docker-angularjs-tutorials
 ADD $app$/tutorial.html /tmp/tutorial.html
 
 # Copy file as user and launch grunt.
-CMD cp -a /tmp/tutorial.html /home/user/application/view.html && grunt serve
+CMD mkdir /home/user/application/views && cp -a /tmp/tutorial.html /home/user/application/views/view.html && grunt serve
 
